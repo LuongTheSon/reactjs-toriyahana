@@ -1,0 +1,243 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .footer {
+    width: 100%;
+    padding: 41px 0 35px;
+    background: url(@assets/images/footer-brg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .footerLogo {
+    display: inline-block;
+    width: 146px;
+    margin-bottom: 45px;
+  }
+
+  .footerMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+
+    li {
+      width: 185px;
+      border-right: 1px dotted #fff;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        padding: 2px 0 8px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #fff;
+      }
+    }
+  }
+
+  .nameEn {
+    display: block;
+    font-size: 12px;
+    color: #9b7c52;
+    line-height: 1;
+    margin-top: 1px;
+  }
+
+  .footerPrivacy {
+    display: flex;
+    justify-content: center;
+    width: 1008px;
+    margin: 0 auto 24px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    li {
+      border-right: 1px solid #fff;
+      margin: 11px 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding: 0 61px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    color: #bb916d;
+    letter-spacing: 1.4px;
+  }
+}
+
+@media (--sp) {
+  .footer {
+    width: 100%;
+    padding: vw(40) 0 vw(20);
+    background: url(@assets/images/footer-brg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .footerLogo {
+    display: inline-block;
+    width: vw(146);
+    margin-bottom: vw(30);
+  }
+
+  .footerMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: vw(30);
+
+    li {
+      width: vw(180);
+      border-right: 1px dotted #fff;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        padding: vw(2) 0 vw(8);
+        font-size: vw(18);
+        letter-spacing: vw(1);
+        color: #fff;
+      }
+    }
+  }
+
+  .nameEn {
+    display: block;
+    font-size: vw(14);
+    color: #9b7c52;
+    line-height: 1;
+    margin-top: vw(5);
+  }
+
+  .footerPrivacy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto vw(24);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    li {
+      border-right: 1px solid #fff;
+      margin: vw(11) 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        font-size: vw(16);
+        padding: 0 vw(61);
+        letter-spacing: vw(1);
+      }
+    }
+  }
+
+  .copyright {
+    font-size: vw(12);
+    color: #bb916d;
+    letter-spacing: vw(1.4);
+  }
+}
+
+@media (--tb) {
+  .footer {
+    width: 100%;
+    padding: pw(41) 0 pw(35);
+    background: url(@assets/images/footer-brg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .footerLogo {
+    display: inline-block;
+    width: pw(146);
+    margin-bottom: pw(45);
+  }
+
+  .footerMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: pw(24);
+
+    li {
+      width: pw(185);
+      border-right: 1px dotted #fff;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        padding: pw(2) 0 pw(8);
+        font-size: pw(16);
+        letter-spacing: 1px;
+        color: #fff;
+      }
+    }
+  }
+
+  .nameEn {
+    display: block;
+    font-size: pw(12);
+    color: #9b7c52;
+    line-height: 1;
+    margin-top: 1px;
+  }
+
+  .footerPrivacy {
+    display: flex;
+    justify-content: center;
+    width: pw(1008);
+    margin: 0 auto pw(24);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    li {
+      border-right: 1px solid #fff;
+      margin: pw(11) 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        font-size: pw(16);
+        padding: 0 pw(61);
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: pw(12);
+    color: #bb916d;
+    letter-spacing: pw(1.4);
+  }
+}

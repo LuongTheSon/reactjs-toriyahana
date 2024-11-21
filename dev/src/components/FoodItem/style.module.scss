@@ -1,0 +1,95 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .foodItemTtl {
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    line-height: 1.4;
+  }
+
+  .foodItemDetail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foodItemPrice {
+    margin-top: 2px;
+    font-size: 16px;
+    color: #42210b;
+  }
+
+  .foodItemCategory {
+    width: 88px;
+    padding: 1px 0 2px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (--sp) {
+  .foodItemTtl {
+    margin-top: vw(10);
+    margin-bottom: vw(10);
+    font-size: vw(18);
+    font-weight: bold;
+    letter-spacing: vw(1);
+    line-height: 1.4;
+  }
+
+  .foodItemDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .foodItemPrice {
+    margin-top: vw(2);
+    font-size: vw(18);
+    color: #42210b;
+  }
+
+  .foodItemCategory {
+    width: vw(88);
+    padding: vw(1) 0 vw(2);
+    font-size: vw(16);
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (--tb) {
+  .foodItemTtl {
+    margin-bottom: pw(3);
+    font-size: pw(20);
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    line-height: 1.4;
+  }
+
+  .foodItemDetail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foodItemPrice {
+    margin-top: pw(2);
+    font-size: pw(16);
+    color: #42210b;
+  }
+
+  .foodItemCategory {
+    width: pw(88);
+    padding: pw(1) 0 pw(2);
+    font-size: pw(17);
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+}

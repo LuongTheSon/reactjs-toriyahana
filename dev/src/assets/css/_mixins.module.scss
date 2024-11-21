@@ -1,0 +1,32 @@
+@mixin btn($w, $p, $fz) {
+  width: $w;
+  padding: $p;
+  box-shadow: none;
+  border: none;
+  background-color: #700215;
+  font-size: $fz;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+
+@mixin ttl($p, $fz) {
+  color: #fff;
+  background: #42210b;
+  padding: $p;
+  font-size: $fz;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@mixin flex_custom($x, $y) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin grid_custom($num, $gap) {
+  display: grid;
+  grid-template-columns: repeat($num, 1fr);
+  gap: $gap;
+}

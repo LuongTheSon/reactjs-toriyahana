@@ -1,0 +1,129 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .amountBox {
+    width: 450px;
+    margin: 80px 0 0 auto;
+  }
+
+  .amountTtl {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .amountList {
+    border-top: 1px solid $border;
+    margin-bottom: 20px;
+    li {
+      @include mixins.flex_custom(space-between, center);
+      border-bottom: 1px solid $border;
+    }
+  }
+
+  .amountName {
+    width: 150px;
+    padding: 10px 20px;
+    border-right: 1px solid $border;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .amountPrice {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .amountButton {
+    @include mixins.btn(100%, 20px, 16px);
+  }
+}
+
+@media (--sp) {
+  .amountBox {
+    width: vw(350);
+    margin: vw(80) 0 0 auto;
+  }
+
+  .amountTtl {
+    margin-bottom: vw(30);
+    font-size: vw(16);
+    font-weight: bold;
+  }
+
+  .amountList {
+    border-top: 1px solid $border;
+    margin-bottom: vw(20);
+    li {
+      @include mixins.flex_custom(space-between, center);
+      border-bottom: 1px solid $border;
+    }
+  }
+
+  .amountName {
+    width: vw(130);
+    padding: vw(10) vw(20);
+    border-right: 1px solid $border;
+    font-size: vw(14);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .amountPrice {
+    padding: vw(10) vw(20);
+    font-size: vw(16);
+    font-weight: bold;
+  }
+
+  .amountButton {
+    @include mixins.btn(100%, vw(20), vw(16));
+  }
+}
+
+@media (--tb) {
+  .amountBox {
+    width: pw(450);
+    margin: pw(80) 0 0 auto;
+  }
+
+  .amountTtl {
+    margin-bottom: pw(30);
+    font-size: pw(18);
+    font-weight: bold;
+  }
+
+  .amountList {
+    border-top: 1px solid $border;
+    margin-bottom: pw(20);
+    li {
+      @include mixins.flex_custom(space-between, center);
+      border-bottom: 1px solid $border;
+    }
+  }
+
+  .amountName {
+    width: pw(150);
+    padding: pw(10) pw(20);
+    border-right: 1px solid $border;
+    font-size: pw(14);
+    font-weight: 500;
+    letter-spacing: pw(1);
+    line-height: 1.5;
+  }
+
+  .amountPrice {
+    padding: pw(10) pw(20);
+    font-size: pw(16);
+    font-weight: bold;
+  }
+
+  .amountButton {
+    @include mixins.btn(100%, pw(20), pw(16));
+  }
+}

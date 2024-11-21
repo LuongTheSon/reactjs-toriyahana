@@ -1,0 +1,240 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .itemCart {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    border-bottom: 1px solid $border;
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .itemCartImage {
+    width: 170px;
+  }
+
+  .itemCartInfor {
+    margin-left: 20px;
+  }
+
+  .itemCartTtl {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .itemCartPrice {
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $red-color;
+
+    span {
+      display: inline-block;
+      vertical-align: 2px;
+      font-size: 14px;
+    }
+  }
+
+  .itemCartQtv {
+    margin-left: 10px;
+    width: 90px;
+    height: 30px;
+    border: 1px solid $border;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .itemCartRemove {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 35px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .commentCart {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+@media (--sp) {
+  .itemCart {
+    position: relative;
+    display: flex;
+    margin-bottom: vw(30);
+    padding-bottom: vw(30);
+    padding-right: vw(50);
+    border-bottom: 1px solid $border;
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .itemCartImage {
+    width: vw(170);
+  }
+
+  .itemCartInfor {
+    margin-left: vw(10);
+  }
+
+  .itemCartTtl {
+    font-size: vw(20);
+    font-weight: 500;
+    margin-bottom: vw(15);
+  }
+
+  .itemCartPrice {
+    padding-left: vw(10);
+    margin-bottom: vw(5);
+    font-size: vw(18);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $red-color;
+
+    span {
+      display: inline-block;
+      vertical-align: vw(2);
+      font-size: vw(14);
+    }
+  }
+
+  .itemCartQtv {
+    margin-left: vw(10);
+    width: vw(90);
+    height: vw(30);
+    border: 1px solid $border;
+    font-size: vw(14);
+    padding: vw(5) vw(10);
+  }
+
+  .itemCartRemove {
+    position: absolute;
+    top: 50%;
+    right: vw(20);
+    width: vw(35);
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .commentCart {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+@media (--tb) {
+  .itemCart {
+    position: relative;
+    display: flex;
+    margin-bottom: pw(30);
+    padding-bottom: pw(30);
+    padding-right: pw(50);
+    border-bottom: 1px solid $border;
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .itemCartImage {
+    width: pw(170);
+  }
+
+  .itemCartInfor {
+    margin-left: pw(20);
+  }
+
+  .itemCartTtl {
+    font-size: pw(20);
+    font-weight: 500;
+    margin-bottom: pw(15);
+  }
+
+  .itemCartPrice {
+    padding-left: pw(10);
+    margin-bottom: pw(5);
+    font-size: pw(18);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $red-color;
+
+    span {
+      display: inline-block;
+      vertical-align: pw(2);
+      font-size: pw(14);
+    }
+  }
+
+  .itemCartQtv {
+    margin-left: pw(10);
+    width: pw(90);
+    height: pw(30);
+    border: 1px solid $border;
+    font-size: pw(14);
+    padding: pw(5) pw(10);
+  }
+
+  .itemCartRemove {
+    position: absolute;
+    top: 50%;
+    right: pw(20);
+    width: pw(35);
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .commentCart {
+    font-size: pw(16);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: pw(1);
+    line-height: 1.5;
+
+    a {
+      text-decoration: underline;
+      text-underline-offset: pw(3);
+    }
+  }
+}

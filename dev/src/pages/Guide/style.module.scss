@@ -1,0 +1,138 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .ttlPage {
+    @include mixins.ttl(8px 0 11px, 24px);
+  }
+
+  .boxInfor {
+    padding: 42px 63px 47px;
+    border: 1px solid #42210b;
+  }
+
+  .listInfor {
+    margin-bottom: 48px;
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid #42210b;
+      padding-bottom: 44px;
+      margin-bottom: 41px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .titleList {
+    color: #42210b;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .textList {
+    font-size: 16px;
+  }
+
+  .areaSubheading {
+    font-size: 16px;
+    color: #42210b;
+  }
+
+  .areaButton {
+    @include mixins.btn(100%, 20px, 16px);
+  }
+}
+
+@media (--sp) {
+  .ttlPage {
+    @include mixins.ttl(vw(8) 0 vw(11), vw(24));
+  }
+
+  .boxInfor {
+    padding: vw(42) vw(63) vw(47);
+    border: 1px solid #42210b;
+  }
+
+  .listInfor {
+    margin-bottom: vw(48);
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid #42210b;
+      padding-bottom: vw(44);
+      margin-bottom: vw(41);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .titleList {
+    color: #42210b;
+    font-size: vw(24);
+    margin-bottom: vw(24);
+  }
+
+  .textList {
+    font-size: vw(16);
+  }
+
+  .areaSubheading {
+    font-size: vw(16);
+    color: #42210b;
+  }
+
+  .areaButton {
+    @include mixins.btn(100%, vw(20), vw(16));
+  }
+}
+
+@media (--tb) {
+  .ttlPage {
+    @include mixins.ttl(pw(8) 0 pw(11), pw(24));
+  }
+
+  .boxInfor {
+    padding: pw(42) pw(63) pw(47);
+    border: 1px solid #42210b;
+  }
+
+  .listInfor {
+    margin-bottom: pw(48);
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid #42210b;
+      padding-bottom: pw(44);
+      margin-bottom: pw(41);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .titleList {
+    color: #42210b;
+    font-size: pw(24);
+    margin-bottom: pw(24);
+  }
+
+  .textList {
+    font-size: pw(16);
+  }
+
+  .areaSubheading {
+    font-size: pw(16);
+    color: #42210b;
+  }
+
+  .areaButton {
+    @include mixins.btn(100%, pw(20), pw(16));
+  }
+}

@@ -1,0 +1,21 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .listFood {
+    @include mixins.grid_custom(4, 43px 12px);
+  }
+}
+
+@media (--sp) {
+  .listFood {
+    @include mixins.grid_custom(2, vw(30) vw(10));
+  }
+}
+
+@media (--tb) {
+  .listFood {
+    @include mixins.grid_custom(4, pw(43) pw(12));
+  }
+}

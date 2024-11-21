@@ -1,0 +1,108 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .categoryTabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+
+    li {
+      display: block;
+      width: calc(100% / 5 - 8px);
+      margin-right: 10px;
+      padding: 4px 0 8px;
+      border: 1px solid #42210b;
+      cursor: pointer;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 28px;
+      font-weight: bold;
+      color: #42210b;
+      text-align: center;
+      transition: background-image 0.3s, color 0.4s ease-in-out;
+
+      &:hover,
+      &.active {
+        background-image: url('@assets/images/button-brg.png');
+        color: #fff;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (--sp) {
+  .categoryTabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: vw(50);
+
+    li {
+      display: block;
+      width: calc(100% / 5 - vw(5));
+      margin-right: vw(5);
+      padding: vw(4) 0 vw(8);
+      border: 1px solid #42210b;
+      cursor: pointer;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: vw(24);
+      font-weight: bold;
+      color: #42210b;
+      text-align: center;
+      transition: background-image 0.3s, color 0.4s ease-in-out;
+
+      &:hover,
+      &.active {
+        background-image: url('@assets/images/button-brg.png');
+        color: #fff;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (--tb) {
+  .categoryTabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: pw(49);
+
+    li {
+      display: block;
+      width: calc(100% / 5 - pw(8));
+      margin-right: pw(10);
+      padding: pw(4) 0 pw(8);
+      border: 1px solid #42210b;
+      cursor: pointer;
+      background-image: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: pw(28);
+      font-weight: bold;
+      color: #42210b;
+      text-align: center;
+      transition: background-image 0.3s, color 0.4s ease-in-out;
+
+      &:hover,
+      &.active {
+        background-image: url('@assets/images/button-brg.png');
+        color: #fff;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

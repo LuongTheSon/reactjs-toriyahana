@@ -1,0 +1,207 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .ttlPage {
+    @include mixins.ttl(8px 0 11px, 24px);
+  }
+
+  .boxInfor {
+    padding: 42px 63px 47px;
+    border: 1px solid #42210b;
+  }
+
+  .listInfor {
+    margin-bottom: 48px;
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid #42210b;
+      padding-bottom: 44px;
+      margin-bottom: 41px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .titleList {
+    color: #42210b;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .listToku {
+    margin-bottom: 41px;
+  }
+
+  .tableToku {
+    width: 100%;
+    border: 1px solid #42210b;
+    font-size: 16px;
+
+    tr {
+      border-bottom: 1px solid #42210b;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    th {
+      color: #42210b;
+      width: 274px;
+      padding: 28px 0 28px 47px;
+      border-right: 1px solid #42210b;
+      background: #f2f0ee;
+      text-align: left;
+    }
+
+    td {
+      padding: 28px 0 28px 47px;
+    }
+  }
+
+  .areaButton {
+    @include mixins.btn(100%, 20px, 16px);
+  }
+}
+
+@media (--sp) {
+  .ttlPage {
+    @include mixins.ttl(vw(8) 0 vw(11), vw(24));
+  }
+
+  .boxInfor {
+    padding: vw(25) vw(10) vw(40);
+    border: 1px solid #42210b;
+  }
+
+  .listInfor {
+    margin-bottom: vw(48);
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid #42210b;
+      padding-bottom: vw(44);
+      margin-bottom: vw(41);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .titleList {
+    color: #42210b;
+    font-size: vw(24);
+    margin-bottom: vw(24);
+  }
+
+  .listToku {
+    margin-bottom: vw(41);
+  }
+
+  .tableToku {
+    width: 100%;
+    border: 1px solid #42210b;
+    font-size: vw(16);
+
+    tr {
+      border-bottom: 1px solid #42210b;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    th {
+      width: 40%;
+      padding: vw(28) 0 vw(28) vw(47);
+      vertical-align: top;
+      color: #42210b;
+      border-right: 1px solid #42210b;
+      background: #f2f0ee;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    td {
+      width: 60%;
+      padding: vw(23) vw(5) vw(20) vw(10);
+    }
+  }
+
+  .areaButton {
+    @include mixins.btn(100%, vw(20), vw(16));
+  }
+}
+
+@media (--tb) {
+  .ttlPage {
+    @include mixins.ttl(pw(8) 0 pw(11), pw(24));
+  }
+
+  .boxInfor {
+    padding: pw(42) pw(63) pw(47);
+    border: 1px solid #42210b;
+  }
+
+  .listInfor {
+    margin-bottom: pw(48);
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid #42210b;
+      padding-bottom: pw(44);
+      margin-bottom: pw(41);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .titleList {
+    color: #42210b;
+    font-size: pw(24);
+    margin-bottom: pw(24);
+  }
+
+  .listToku {
+    margin-bottom: pw(41);
+  }
+
+  .tableToku {
+    width: 100%;
+    border: 1px solid #42210b;
+    font-size: pw(16);
+
+    tr {
+      border-bottom: 1px solid #42210b;
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    th {
+      color: #42210b;
+      border-right: 1px solid #42210b;
+      background: #f2f0ee;
+      width: pw(274);
+      text-align: left;
+      padding: pw(28) 0 pw(28) pw(47);
+    }
+
+    td {
+      padding: pw(28) 0 pw(28) pw(47);
+    }
+  }
+
+  .areaButton {
+    @include mixins.btn(100%, pw(20), pw(16));
+  }
+}

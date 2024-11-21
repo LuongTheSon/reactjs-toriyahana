@@ -1,0 +1,182 @@
+@use '@css/variables.module.scss' as *;
+@use '@css/mixins.module.scss' as mixins;
+@use '@css/media.module.scss' as *;
+
+@media (--pc) {
+  .order {
+    @include mixins.flex_custom(space-between, flex-end);
+  }
+
+  .orderFrom {
+    width: 500px;
+  }
+
+  .rowForm {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nameForm {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .require {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: $red_color;
+  }
+
+  .inputForm {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $font_noto;
+    border: 1px solid $border;
+  }
+
+  .inputText {
+    width: 100%;
+    height: 120px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $font_noto;
+    resize: none;
+    border: 1px solid $border;
+  }
+
+  .btnForm {
+    @include mixins.btn(100%, 20px, 16px);
+  }
+
+  .visible {
+    background-color: #ececec;
+    pointer-events: none;
+  }
+}
+
+@media (--sp) {
+  .orderFrom {
+    width: 100%;
+  }
+
+  .rowForm {
+    width: 100%;
+    margin-bottom: vw(20);
+  }
+
+  .nameForm {
+    margin-bottom: vw(10);
+    font-size: vw(16);
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .require {
+    font-size: vw(12);
+    font-weight: 400;
+    letter-spacing: vw(1);
+    line-height: 1.5;
+    color: $red_color;
+  }
+
+  .inputForm {
+    width: 100%;
+    height: vw(40);
+    padding: vw(5) vw(10);
+    border-radius: vw(5);
+    font-size: vw(16);
+    font-family: $font_noto;
+    border: 1px solid $border;
+  }
+
+  .inputText {
+    width: 100%;
+    height: vw(120);
+    padding: vw(5) vw(10);
+    border-radius: vw(5);
+    font-size: vw(16);
+    font-family: $font_noto;
+    resize: none;
+    border: 1px solid $border;
+  }
+
+  .btnForm {
+    @include mixins.btn(100%, vw(20), vw(16));
+  }
+
+  .visible {
+    background-color: #ececec;
+    pointer-events: none;
+  }
+}
+
+@media (--tb) {
+  .order {
+    @include mixins.flex_custom(space-between, flex-end);
+  }
+
+  .orderFrom {
+    width: pw(500);
+  }
+
+  .rowForm {
+    width: 100%;
+    margin-bottom: pw(20);
+  }
+
+  .nameForm {
+    margin-bottom: pw(10);
+    font-size: pw(16);
+    font-weight: 500;
+    letter-spacing: pw(1);
+    line-height: 1.5;
+  }
+
+  .require {
+    font-size: pw(12);
+    font-weight: 400;
+    letter-spacing: pw(1);
+    line-height: 1.5;
+    color: $red_color;
+  }
+
+  .inputForm {
+    width: 100%;
+    height: pw(40);
+    padding: pw(5) pw(10);
+    border-radius: pw(5);
+    font-size: pw(16);
+    font-family: $font_noto;
+    border: 1px solid $border;
+  }
+
+  .inputText {
+    width: 100%;
+    height: pw(120);
+    padding: pw(5) pw(10);
+    border-radius: pw(5);
+    font-size: pw(16);
+    font-family: $font_noto;
+    resize: none;
+    border: 1px solid $border;
+  }
+
+  .btnForm {
+    @include mixins.btn(100%, pw(20), pw(16));
+  }
+
+  .visible {
+    background-color: #ececec;
+    pointer-events: none;
+  }
+}
